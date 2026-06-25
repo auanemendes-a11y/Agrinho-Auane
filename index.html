@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terra forte, futuro sustentável</title>
+
+    <meta name="description"
+        content="Justiça ambiental, soberania alimentar, agroecologia e defesa dos povos originários.">
+
+    <meta name="keywords"
+        content="agroecologia, povos indígenas, agricultura familiar, justiça ambiental, sustentabilidade">
+
+    <meta property="og:title" content="Terra, Floresta e Futuro">
+    <meta property="og:description"
+        content="Justiça ambiental, soberania alimentar e defesa dos povos originários.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/compartilhamento.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        crossorigin=""/>
+
+        <link rel="icon" href="favicon.ico">
+</head>
+
+<body id="top">
+
+<!-- MENU FIXO (APENAS UMA INSTÂNCIA) -->
+<div class="ui-fixed">
+
+    <nav class="navbar container">
+
+        <div class="logo">
+            Terra & Futuro
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <ul class="menu">
+            <li><a href="#problemas">Problemas</a></li>
+            <li><a href="#impactos">Impactos</a></li>
+            <li><a href="#alternativas">Alternativas</a></li>
+            <li><a href="#dados">Indicadores</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <a href="#top" class="top-btn" aria-label="Voltar ao topo">↑</a>
+
+</div>
+
+<button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+
+<header class="hero">
+
+    <div class="hero-content container">
+
+        <h1>Terra forte é terra estável. Sustentabilidade, é ter futuro!</h1>
+
+        <p>
+            Justiça ambiental, soberania alimentar e defesa dos povos originários.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#impactos" class="btn btn-primary">
+                Conheça os impactos
+            </a>
+
+            <a href="#alternativas" class="btn btn-secondary">
+                Fortaleça iniciativas populares
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main>
+
+    <!-- ===================== -->
+    <!-- SEU CONTEÚDO ORIGINAL -->
+    <!-- ===================== -->
+
+    <section id="problemas">
+
+        <div class="container">
+
+            <h2>O que está acontecendo?</h2>
+
+            <div class="card-grid">
+
+                <article class="card reveal">
+                    <h3>Expansão da Fronteira Agrícola</h3>
+
+                    <p>
+                        A expansão sobre áreas naturais pode provocar
+                        desmatamento, fragmentação de ecossistemas
+                        e conflitos territoriais. A grilagem e "pistolagem"
+                        marcaram o passado de nosso estado, e conflitos 
+                        judiciais por terra acontecem ainda, em regiões
+                        como o município de Pinhão, na "Zattarlândia".
+                    </p>
+                </article>
+
+                <article class="card reveal">
+                    <h3>Mineração Predatória</h3>
+
+                    <p>
+                        Grandes empreendimentos de mineração podem gerar
+                        degradação ambiental, contaminação hídrica
+                        e deslocamentos populacionais. O lobby minerador e 
+                        do agronegócio é responsável por uma grande pressão
+                        pela flexibilização de legislação ambiental. Até
+                        mesmo a FAEP posicionou-se a favor da nova lei
+                        do Marco Temporal.
+                    </p>
+                </article>
+
+                <article class="card reveal">
+                    <h3>Violência Contra Povos Originários</h3>
+
+                    <p>
+                        Povos indígenas continuam enfrentando ameaças
+                        territoriais e violações de direitos fundamentais.
+                        A violência contra os povos indígenas não apenas 
+                        é letal em confrontos diretos, mas impacta o bem 
+                        estar e a dignidade, a ponto de termos altos índices
+                        de suicídio na juventude em áreas como Guaíra/PR.
+                    </p>
+                </article>
+
+                <article class="card reveal">
+                    <h3>Agrotóxicos e a contaminação da vida</h3>
+
+                    <p>
+                        Em nome da produtividade, são utilizados agrotóxicos
+                        de maneira indiscriminada, ignorando doses recomendadas,
+                        substâncias controladas e períodos de carência.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="impactos" class="section-alt">
+
+        <div class="container">
+
+            <h2>Impactos</h2>
+
+            <div class="impact-grid">
+
+                <div class="impact-box reveal">
+                    <h3>Ambientais</h3>
+                    <ul>
+                        <li>Desmatamento</li>
+                        <li>Perda de biodiversidade</li>
+                        <li>Contaminação dos rios</li>
+                        <li>Emissões de carbono</li>
+                    </ul>
+                </div>
+
+                <div class="impact-box reveal">
+                    <h3>Sociais</h3>
+                    <ul>
+                        <li>Conflitos fundiários</li>
+                        <li>Deslocamento de comunidades</li>
+                        <li>Insegurança alimentar</li>
+                        <li>Violação de direitos</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="alternativas">
+
+        <div class="container">
+
+            <h2>Alternativas Sustentáveis</h2>
+
+            <div class="card-grid">
+
+                <article class="card reveal">
+                    <h3>Agricultura Familiar</h3>
+                    <p>Produção diversificada, geração de renda local e segurança alimentar.</p>
+                </article>
+
+                <article class="card reveal">
+                    <h3>Agroecologia</h3>
+                    <p>Integra produção agrícola e conservação ambiental.</p>
+                </article>
+
+                <article class="card reveal">
+                    <h3>Cooperativas Populares</h3>
+                    <p>Economia solidária e fortalecimento comunitário.</p>
+                </article>
+
+                <article class="card reveal">
+                    <h3>Produção Popular</h3>
+                    <p>Iniciativas comunitárias e o MTST ampliam o acesso a alimentos saudáveis.</p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="dados" class="section-alt">
+
+        <div class="container">
+
+            <h2>Indicadores Socioambientais</h2>
+
+            <div class="stats-grid">
+
+                <div class="stat-card reveal">
+                    <span class="numero">305</span>
+                    <p>Povos indígenas reconhecidos no Brasil.</p>
+                </div>
+
+                <div class="stat-card reveal">
+                    <span class="numero">274</span>
+                    <p>Línguas indígenas registradas.</p>
+                </div>
+
+                <div class="stat-card reveal">
+                    <span class="numero">70%</span>
+                    <p>Participação da agricultura familiar na produção alimentar.</p>
+                </div>
+
+                <div class="stat-card reveal">
+                    <span class="numero">+8 mil</span>
+                    <p>Assentamentos distribuídos pelo território nacional.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="quote">
+        <blockquote>
+            "Não existe justiça climática sem justiça social e territorial. Quando o lucro se coloca acima da vida, o único futuro possível é ancestral!"
+        </blockquote>
+    </section>
+
+    <section id="mapa">
+
+        <div class="container">
+
+            <h2>Territórios, Resistências e Justiça Ambiental</h2>
+
+            <p class="map-description">
+                Este mapa apresenta exemplos de territórios historicamente impactados por conflitos socioambientais e regiões de resistência comunitária.
+            </p>
+
+            <div id="map"></div>
+
+        </div>
+
+    </section>
+
+    <section id="contato" class="contato">
+
+        <div class="container">
+
+            <h2>Entre em contato</h2>
+
+            <form action="mailto:auane.mendes@escola.pr.gov.br"
+                method="post"
+                enctype="text/plain">
+
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" rows="6" placeholder="Sua mensagem" required></textarea>
+
+                <button class="btn btn-primary">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        Terra indígena de Marrecas. Colégio Cacique Otávio dos Santos, 2026
+    </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
