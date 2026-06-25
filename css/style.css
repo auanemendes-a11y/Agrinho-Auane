@@ -32,50 +32,6 @@ body{
     line-height:1.8;
 }
 
-.container{
-    width:min(92%,1200px);
-    margin:auto;
-}
-
-section{
-    padding:5rem 0;
-}
-
-h1,h2,h3{
-    line-height:1.2;
-}
-
-h1{
-    font-size:clamp(2.8rem,8vw,5rem);
-}
-
-h2{
-    font-size:clamp(2rem,5vw,3rem);
-    text-align:center;
-    margin-bottom:3rem;
-}
-
-/* =========================
-   HERO (CORRETO PARA GITHUB PAGES)
-   ========================= */
-
-.hero{
-    min-height:100vh;
-    color:white;
-
-    background-image:
-        linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-        url("../img/hero.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
-
-/* =========================
-   MENU FIXO
-   ========================= */
-
 .ui-fixed{
     position:fixed;
     top:0;
@@ -143,12 +99,48 @@ h2{
     color:white;
     text-decoration:none;
     font-size:1.2rem;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
     margin-left:10px;
+    transition:0.3s;
 }
 
-/* =========================
-   HERO CONTENT
-   ========================= */
+.top-btn:hover{
+    transform:translateY(-3px);
+}
+
+.hero{
+    min-height:100vh;
+    color:white;
+    background:
+        linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+        url("../img/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    padding-top:80px;
+}
+
+.container{
+    width:min(92%,1200px);
+    margin:auto;
+}
+
+section{
+    padding:5rem 0;
+}
+
+h1,h2,h3{
+    line-height:1.2;
+}
+
+h1{
+    font-size:clamp(2.8rem,8vw,5rem);
+}
+
+h2{
+    font-size:clamp(2rem,5vw,3rem);
+    text-align:center;
+    margin-bottom:3rem;
+}
 
 .hero-content{
     min-height:80vh;
@@ -185,10 +177,6 @@ h2{
     color:var(--primary);
 }
 
-/* =========================
-   CARDS
-   ========================= */
-
 .card-grid{
     display:grid;
     gap:2rem;
@@ -220,20 +208,33 @@ h2{
     background:rgba(0,0,0,0.03);
 }
 
-/* =========================
-   MAPA
-   ========================= */
+.quote{
+    text-align:center;
+    font-size:1.6rem;
+    font-style:italic;
+}
+
+.numero{
+    display:block;
+    font-size:3rem;
+    color:var(--primary);
+    font-weight:800;
+}
+
+.map-description{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 2rem auto;
+}
 
 #map{
     width:100%;
     height:500px;
     border-radius:16px;
+    overflow:hidden;
     border:1px solid var(--border);
+    box-shadow:0 4px 20px rgba(0,0,0,0.1);
 }
-
-/* =========================
-   CONTATO
-   ========================= */
 
 .contato form{
     max-width:700px;
@@ -252,9 +253,10 @@ h2{
     color:var(--text);
 }
 
-/* =========================
-   BOTÃO TEMA
-   ========================= */
+footer{
+    padding:2rem;
+    text-align:center;
+}
 
 #theme-toggle{
     position:fixed;
@@ -270,10 +272,6 @@ h2{
     z-index:1000;
 }
 
-/* =========================
-   ANIMAÇÃO
-   ========================= */
-
 .reveal{
     opacity:0;
     transform:translateY(40px);
@@ -284,10 +282,6 @@ h2{
     opacity:1;
     transform:none;
 }
-
-/* =========================
-   RESPONSIVO
-   ========================= */
 
 @media(min-width:768px){
 
